@@ -11,7 +11,7 @@ const player = {
   events: {
     '#btnPause': 'pause',
     '#btnPlay': 'play',
-    '#btnSlow': 'slow',
+    // '#btnSlow': 'slow',
     '#btnNormal': 'normal',
     '#btnFast': 'fast',
     
@@ -49,19 +49,19 @@ const player = {
   pause: () => {
     window.clearInterval(player.id)
   },
-  slow: () => {
-    player.pause()
-    player.time = 300
-    player.play()
-  },
+  // slow: () => {
+  //   player.pause()
+  //   player.time = 300
+  //   player.play()
+  // },
   normal: () => {
     player.pause()
-    player.time = 100
+    player.time = 20
     player.play()
   },
   fast: () => {
     player.pause()
-    player.time = 0
+    player.time = 5
     player.play()
   }
 }

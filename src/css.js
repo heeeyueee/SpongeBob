@@ -10,6 +10,20 @@ const string = `
 	height: 600px;
 	text-align: center;
 }
+@media (min-width:500px) {
+	.face {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: 100px auto;
+		width: 600px;
+		height: 600px;
+		text-align: center;
+	}
+
+}
 
 .eyes {
 	position: relative;
@@ -20,8 +34,10 @@ const string = `
 	height: 200px;
 	border: 5px solid black;
 	background: white;
-	-webkit-animation: blink forwards infinite 6s ease-in-out;
-	        animation: blink forwards infinite 6s ease-in-out;
+	-webkit-animation: blink forwards 
+	infinite 6s ease-in-out;
+	        animation: blink forwards 
+			infinite 6s ease-in-out;
 }
 
 .eyes::after {
@@ -209,7 +225,8 @@ const string = `
 	width: 420px;
 	height: 120px;
 	border: solid 5px #000;
-	border-color: #000 transparent transparent transparent;
+	border-color: #000 transparent 
+	transparent transparent;
 	border-radius: 50%/100px 100px 0 0;
 	-webkit-transform: rotate(180deg);
 	        transform: rotate(180deg);

@@ -15,11 +15,11 @@
     <div id="demo">
     </div>
     <div id="buttons">
-        <button id="btnPause">暂停</button>
-        <button id="btnPlay">播放</button>
-        <button id="btnSlow">慢速</button>
-        <button id="btnNormal">中速</button>
-        <button id="btnFast">快速</button>
+        <button id="btnPause"></button>
+        <button id="btnPlay"></button>
+        <!-- <button id="btnSlow">慢速</button> -->
+        <button id="btnNormal"></button>
+        <button id="btnFast"></button>
     </div>
     <style>
         * {
@@ -32,19 +32,44 @@
         }
 
         #buttons {
-            position: fixed;
-            right: 0;
-            top: 0;
+            position: absolute;
+            left: 15%;
+            top: 21.6%;
             z-index: 10;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             margin-top: 10px;
             margin-right: 10px;
         }
 
         #buttons>button {
             margin-bottom: 10px;
-            padding: 4px 8px;
+            outline: 0;
+            border: 0;
+            background-position: center;
+            background-size: 100%;
+            width: 30px;
+            height: 30px;
+        }
+
+        #btnPause {
+            background: url("images/stop.jpg") no-repeat;
+            margin-right: 20px;
+        }
+
+        #btnPlay {
+            background: url("images/play.png") no-repeat;
+            margin-right: 100px;
+        }
+
+        #btnNormal {
+            background: url("images/1x.png") no-repeat;
+            margin-right: 20px;
+        }
+
+        #btnFast {
+            background: url("images/2x.png") no-repeat;
+            margin-right: 20px;
         }
 
         #demo2 {
@@ -52,20 +77,19 @@
         }
 
         img {
-
-            width: 25%;
-            height: 20%;
-            margin-left: 35%;
-
+            position: absolute;
+            width: 320px;
+            height: 33%;
+            left: 7%;
         }
 
         #demo {
             position: fixed;
-            height: 30vh;
+            margin-top: 20px;
+            height: 18vh;
             top: 0;
-            left: 0;
+            left: 12%;
             width: 100%;
-            border: 1px solid red;
             overflow-y: auto;
         }
 
@@ -76,11 +100,49 @@
         #html {
             position: fixed;
             bottom: 0;
-            left: 0;
+            right: 0px;
             width: 100%;
             height: 70vh;
             font-size: 0;
             background-color: rgba(253, 219, 33, 1);
+        }
+
+        @media (min-width:500px) {
+            img {
+                position: absolute;
+                width: 320px;
+                height: 33%;
+                left: 38%;
+            }
+
+            #demo {
+                position: fixed;
+                margin-top: 15px;
+                height: 18vh;
+                top: 10px;
+                bottom: 10px;
+                left: 40%;
+                width: 100%;
+                /* border: 1px solid red; */
+                overflow-y: auto;
+            }
+
+            #html {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 70vh;
+                font-size: 0;
+                background-color: rgba(253, 219, 33, 1);
+            }
+
+            #buttons {
+                left: 40%;
+                top: 22%;
+
+            }
+
         }
     </style>
     <div id="html">
