@@ -65,5 +65,4 @@ const player = {
     player.play()
   }
 }
-
-player.init()
+window.onload=function(){player.init()};
