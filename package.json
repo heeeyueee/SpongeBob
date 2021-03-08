@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "css.js": "^0.2.3",
     "parcel": "^1.12.4"
   }
 }
