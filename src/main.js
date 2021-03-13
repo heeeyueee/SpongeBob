@@ -56,12 +56,12 @@ const player = {
   // },
   normal: () => {
     player.pause()
-    player.time = 20
+    player.time = 10
     player.play()
   },
   fast: () => {
     player.pause()
-    player.time = 5
+    player.time = 0
     player.play()
   }
 }

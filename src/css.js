@@ -1,4 +1,8 @@
 const string = `
+我是一个前端新人
+现在一起来画一只海绵宝宝~
+点击下面的按钮可以选择
+[暂停][播放][慢速][快速]
 .face {
 	position: absolute;
 	top: 0;
@@ -24,6 +28,7 @@ const string = `
 	}
 
 }
+
 
 .eyes {
 	position: relative;
@@ -374,23 +379,32 @@ const string = `
 
 @-webkit-keyframes blink { 
   0%, 2%, 60%, 62%, 100% { 
-  	-webkit-transform: scaleX(1) scaleY(1); 
-  	        transform: scaleX(1) scaleY(1); 
+  	-webkit-transform: scaleX(1)
+	  scaleY(1); 
+  	        transform: scaleX(1) 
+			  scaleY(1); 
   } 
   1%, 61% { 
-  	-webkit-transform: scaleX(1.5) scaleY(0.1); 
-  	        transform: scaleX(1.5) scaleY(0.1); 
+  	-webkit-transform: scaleX(1.5) 
+	  scaleY(0.1); 
+  	        transform: scaleX(1.5)
+			   scaleY(0.1); 
   } 
 }
 
 @keyframes blink { 
   0%, 2%, 60%, 62%, 100% { 
-  	-webkit-transform: scaleX(1) scaleY(1); 
-  	        transform: scaleX(1) scaleY(1); 
+  	-webkit-transform: scaleX(1)
+	   scaleY(1); 
+  	        transform: scaleX(1) 
+			  scaleY(1); 
   } 
+
   1%, 61% { 
-  	-webkit-transform: scaleX(1.5) scaleY(0.1); 
-  	        transform: scaleX(1.5) scaleY(0.1); 
+  	-webkit-transform: scaleX(1.5) 
+	  scaleY(0.1); 
+  	transform: scaleX(1.5)
+			   scaleY(0.1); 
   } 
 }
 `
